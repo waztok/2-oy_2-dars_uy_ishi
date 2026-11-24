@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+void multiplyArray(int arr[], int n) {
+    for (int i = 0; i < n; i++) {
+        arr[i] *= 2;
+        printf("%d ", arr[i]);
+    }
+    printf("\n");
+}
+
+int main() {
+    int n;
+    scanf("%d", &n);
+    int arr[n];
+    for (int i = 0; i < n; i++) scanf("%d", &arr[i]);
+    multiplyArray(arr, n);
+    return 0;
+}
